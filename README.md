@@ -1,24 +1,13 @@
-# README
+# SIPL-TEST
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This sipl-test is developed using ```Ruby v2.7.2, Rails v6.0.3.4, PostgreSQL v12.4, Bootstrap v4.5.3, jQuery v3.5.1 and MacOS v10.14.3```
 
-Things you may want to cover:
+## After git clone, cd sipl-test project repository and run below commands in console/terminal
 
-* Ruby version
+`rails db:create`   
+`rails db:migrate`   
 
-* System dependencies
+## Development server   
 
-* Configuration
+Run `rails s` for a dev server. Oepn `http://localhost:3000` in any browser.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
