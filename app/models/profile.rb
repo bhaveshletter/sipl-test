@@ -13,8 +13,8 @@ class Profile < ApplicationRecord
 	validates :landmark, :street, :address, :city, :state, length: { maximum: 255 }, allow_blank: false
 	validates :pincode, numericality: { only_integer: true }
 	validates :pincode, length: {is: 6, message: "must be 6 digit long"}, allow_blank: false  # Not allowed empty string or nil
-	validates :phone_no, presence: true
 	validate :avatar_validation, if: :avatar?
+	validates_length_of :phone_no, minimum: 3, maximum: 15, allow_blank: true
 
 	## callbacks
 
